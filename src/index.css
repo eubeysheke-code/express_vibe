@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #F04E23;
+  --color-primary-hover: #D63D18;
+  --color-bg-grey: #F3F4F6;
+  --color-dark-grey: #111827;
+  --color-accent: #FDE6E1;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F9FAFB] text-[#111827] font-sans antialiased;
+  }
+}
+
+.alfa-card {
+  @apply bg-white rounded-xl p-6 shadow-sm border border-slate-100 transition-all duration-300 hover:shadow-md;
+}
+
+.alfa-button {
+  @apply bg-primary text-white px-6 py-3 rounded-lg font-bold transition-all duration-200 hover:bg-primary-hover active:scale-95 inline-flex items-center justify-center gap-2 shadow-sm;
+}
+
+.alfa-button-outline {
+  @apply border border-slate-200 text-slate-700 px-6 py-3 rounded-lg font-bold transition-all duration-200 hover:bg-slate-50 active:scale-95 inline-flex items-center justify-center gap-2;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-black tracking-tight mb-4 text-slate-900;
+}
+
+.section-subtitle {
+  @apply text-base text-slate-500 mb-10 max-w-2xl;
+}
+
+.verified-badge {
+  @apply inline-flex items-center gap-1.5 bg-primary text-white px-3 py-1 rounded-lg text-xs font-bold;
+}
